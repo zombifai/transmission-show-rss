@@ -1,0 +1,31 @@
+{
+  "name": "transmission-show-rss",
+  "version": "1.0.0",
+  "description": "Script to read from showrss and autostart in transmission",
+  "main": "out/index.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zombifai/transmission-show-rss.git"
+  },
+  "author": "Zombi Fai <zombifia@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zombifai/transmission-show-rss/issues"
+  },
+  "homepage": "https://github.com/zombifai/transmission-show-rss#readme",
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "@types/node": "^9.6.0",
+    "@types/request": "^2.47.0",
+    "@types/request-promise-native": "^1.0.14",
+    "request": "^2.34",
+    "request-promise-native": "^1.0.5",
+    "rss-parser": "^3.1.2"
+  }
+}
