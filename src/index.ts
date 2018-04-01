@@ -9,7 +9,7 @@ import * as path from 'path';
 // Config options... (just constants for now)
 const TRANSMISSION_USER = 'transmission'
 const TRANSMISSION_PASS = 'transmission'
-const host = 'droid'
+const host = 'localhost'
 const port = 9091
 const AUTO_DOWNLOAD_DIR = '/exports/terra/downloads/auto';
 
