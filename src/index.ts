@@ -103,7 +103,7 @@ function processedItem(name: string) : ProcessedItem {
   let now = new Date();
   return {
     name: name,
-    date: now.toDateString(),
+    date: now.toString(),
     epoch: now.getTime()
   };
 }
@@ -136,7 +136,7 @@ function write_statefile(state : State) : Promise<undefined> {
 async function main() : Promise<any> {
   try {
     console.log("----------------------------");
-    console.log(new Date().toDateString());
+    console.log(new Date().toString());
     let rss = await read_rss();
     let processedItems : State = await read_statefile();
     let newItems = 0;

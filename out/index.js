@@ -100,7 +100,7 @@ function processedItem(name) {
     let now = new Date();
     return {
         name: name,
-        date: now.toDateString(),
+        date: now.toString(),
         epoch: now.getTime()
     };
 }
@@ -133,7 +133,7 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             console.log("----------------------------");
-            console.log(new Date().toDateString());
+            console.log(new Date().toString());
             let rss = yield read_rss();
             let processedItems = yield read_statefile();
             let newItems = 0;
