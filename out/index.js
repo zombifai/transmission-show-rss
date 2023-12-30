@@ -124,7 +124,7 @@ function write_statefile(state) {
                 reject(err);
             }
             else {
-                resolve();
+                resolve(undefined);
             }
         });
     });

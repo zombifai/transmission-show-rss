@@ -127,7 +127,7 @@ function write_statefile(state : State) : Promise<undefined> {
       if (err) {
         reject(err);
       } else {
-        resolve();
+        resolve(undefined);
       }
     });
   });
